@@ -1,0 +1,1 @@
+savedcmd_gpio_mod.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.17.0-19-generic/scripts/module.lds -o gpio_mod.ko gpio_mod.o gpio_mod.mod.o .module-common.o
